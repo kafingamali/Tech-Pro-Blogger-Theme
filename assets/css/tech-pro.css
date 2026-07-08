@@ -464,3 +464,99 @@ img{
     grid-template-columns:1fr;
   }
 }
+
+/* ===========================
+      BACK TO TOP
+=========================== */
+
+.tp-top{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2f6bff;
+
+color:#fff;
+
+font-size:18px;
+
+cursor:pointer;
+
+box-shadow:0 15px 35px rgba(0,0,0,.3);
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+.tp-top:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* ===========================
+      LIGHT MODE
+=========================== */
+
+.light-mode{
+
+background:#f4f7fb;
+
+color:#111;
+
+}
+
+.light-mode .tp-header{
+
+background:#ffffff;
+
+}
+
+.light-mode .tp-post{
+
+background:#ffffff;
+
+color:#111;
+
+}
+
+.light-mode .tp-widget{
+
+background:#ffffff;
+
+color:#111;
+
+}
+
+.light-mode .tp-small-card{
+
+background:#e9eef7;
+
+color:#111;
+
+}
+
+.light-mode .tp-footer{
+
+background:#ffffff;
+
+color:#111;
+
+}
