@@ -188,3 +188,68 @@ setInterval(() => {
   }
   showSlide(next);
 }, 4500);
+
+/*==============================
+      PROGRESS BAR
+==============================*/
+
+const progressBar = document.getElementById("tpProgress");
+
+window.addEventListener("scroll",()=>{
+
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+  if(progressBar){
+    progressBar.style.width = progress + "%";
+  }
+
+});
+
+
+/*==============================
+      SEARCH POPUP
+==============================*/
+
+const searchPopup = document.getElementById("tpSearchPopup");
+const searchClose = document.getElementById("tpSearchClose");
+const searchInput = document.getElementById("tpSearchInput");
+
+searchBtn.onclick=function(){
+
+  searchPopup.classList.add("active");
+
+  setTimeout(()=>{
+    searchInput.focus();
+  },200);
+
+}
+
+searchClose.onclick=function(){
+
+  searchPopup.classList.remove("active");
+
+}
+
+searchPopup.addEventListener("click",(e)=>{
+
+  if(e.target === searchPopup){
+    searchPopup.classList.remove("active");
+  }
+
+});
+
+searchInput.addEventListener("keydown",(e)=>{
+
+  if(e.key === "Enter"){
+
+    const keyword = searchInput.value.trim();
+
+    if(keyword.length > 0){
+      window.location.href = "https://www.kafingamali.my.id/search?q=" + encodeURIComponent(keyword);
+    }
+
+  }
+
+});
