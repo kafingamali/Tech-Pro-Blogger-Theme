@@ -560,3 +560,40 @@ background:#ffffff;
 color:#111;
 
 }
+
+/* ===========================
+      HERO SLIDER
+=========================== */
+
+.tp-hero{
+  position:relative;
+}
+
+.tp-slide{
+  display:none;
+  animation:tpFade .5s ease;
+}
+
+.tp-slide.active{
+  display:flex;
+}
+
+.tp-small-card{
+  cursor:pointer;
+}
+
+.tp-small-card.active{
+  border-color:#2f6bff;
+  box-shadow:0 0 0 2px rgba(47,107,255,.25);
+}
+
+@keyframes tpFade{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
