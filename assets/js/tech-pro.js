@@ -152,3 +152,39 @@ topBtn.style.pointerEvents="none";
 });
 
 });
+
+/*==============================
+      HERO SLIDER
+==============================*/
+
+const slides = document.querySelectorAll(".tp-slide");
+const slideButtons = document.querySelectorAll(".tp-small-card[data-slide]");
+let currentSlide = 0;
+
+function showSlide(index){
+  slides.forEach(slide => slide.classList.remove("active"));
+  slideButtons.forEach(btn => btn.classList.remove("active"));
+
+  slides[index].classList.add("active");
+
+  const btn = document.querySelector('.tp-small-card[data-slide="'+index+'"]');
+  if(btn){
+    btn.classList.add("active");
+  }
+
+  currentSlide = index;
+}
+
+slideButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    showSlide(Number(btn.dataset.slide));
+  });
+});
+
+setInterval(() => {
+  let next = currentSlide + 1;
+  if(next >= slides.length){
+    next = 0;
+  }
+  showSlide(next);
+}, 4500);
