@@ -253,3 +253,17 @@ searchInput.addEventListener("keydown",(e)=>{
   }
 
 });
+
+/*==============================
+      MOBILE MENU
+==============================*/
+
+const menuBtn = document.getElementById("tpMenuBtn");
+const mobileMenu = document.getElementById("tpMobileMenu");
+
+if(menuBtn && mobileMenu){
+  menuBtn.onclick = function(){
+    mobileMenu.classList.toggle("active");
+  }
+}
+
