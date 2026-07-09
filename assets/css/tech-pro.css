@@ -365,3 +365,22 @@ img{max-width:100%;display:block}
   .tp-category-grid{grid-template-columns:repeat(2,1fr)}
   .tp-footer-grid{grid-template-columns:1fr}
 }
+
+/* ADS MANAGER */
+.tp-ad-inner{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  align-items:center;
+  justify-content:center;
+}
+
+.tp-ad-inner strong{
+  font-size:16px;
+  color:#eef6ff;
+}
+
+.tp-ad-inner small{
+  font-size:12px;
+  color:#9fb0c4;
+}
