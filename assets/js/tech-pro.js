@@ -156,3 +156,18 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
 });
+document.querySelectorAll(".tp-article pre").forEach(function(pre){
+  const btn = document.createElement("button");
+  btn.innerText = "Copy";
+  btn.className = "tp-copy-code";
+  pre.appendChild(btn);
+
+  btn.addEventListener("click", function(){
+    const code = pre.querySelector("code").innerText;
+    navigator.clipboard.writeText(code);
+    btn.innerText = "Copied";
+    setTimeout(function(){
+      btn.innerText = "Copy";
+    },1500);
+  });
+});
