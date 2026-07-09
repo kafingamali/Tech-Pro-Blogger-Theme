@@ -4,24 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Pro Blogger Theme</title>
-
   <link rel="icon" href="assets/icons/icin.ico">
   <link rel="stylesheet" href="assets/css/tech-pro.css">
 </head>
-
 <body>
-  
-<div class="tp-progress" id="tpProgress"></div>
 
-<div class="tp-search-popup" id="tpSearchPopup">
-  <div class="tp-search-box">
-    <button class="tp-search-close" id="tpSearchClose">×</button>
-    <h2>Cari Artikel</h2>
-    <input type="text" id="tpSearchInput" placeholder="Ketik kata kunci lalu tekan Enter...">
+  <div class="tp-progress" id="tpProgress"></div>
+
+  <div class="tp-search-popup" id="tpSearchPopup">
+    <div class="tp-search-box">
+      <button class="tp-search-close" id="tpSearchClose" type="button">×</button>
+      <h2>Cari Artikel</h2>
+      <input type="text" id="tpSearchInput" placeholder="Ketik kata kunci lalu tekan Enter...">
+    </div>
   </div>
-</div>
-  
-  <!-- HEADER -->
+
   <header class="tp-header">
     <div class="tp-container tp-nav">
       <a href="#" class="tp-logo">TECH <span>PRO</span></a>
@@ -38,9 +35,9 @@
       </nav>
 
       <div class="tp-action">
-        <button id="tpSearchBtn">🔍</button>
-        <button id="tpDarkBtn">🌙</button>
-        <button id="tpMenuBtn" class="tp-menu-btn">☰</button>
+        <button id="tpSearchBtn" type="button">🔍</button>
+        <button id="tpDarkBtn" type="button">🌙</button>
+        <button id="tpMenuBtn" class="tp-menu-btn" type="button">☰</button>
       </div>
     </div>
   </header>
@@ -55,50 +52,45 @@
     <a href="#">Download</a>
     <a href="#">Tentang</a>
   </div>
-  <!-- ADS HEADER -->
+
   <section class="tp-container">
     <div class="tp-ad">ADSTERRA 728x90</div>
   </section>
 
-  <!-- HERO -->
   <main class="tp-container">
 
-<section class="tp-hero">
+    <section class="tp-hero">
+      <div class="tp-hero-main tp-slide active">
+        <span class="tp-label">TUTORIAL</span>
+        <h1>Belajar Cisco CCNA Untuk Pemula</h1>
+        <p>Panduan lengkap belajar Cisco dari dasar hingga siap ujian sertifikasi.</p>
+        <a href="#" class="tp-btn">Baca Selengkapnya</a>
+      </div>
 
-  <div class="tp-hero-main tp-slide active">
-    <span class="tp-label">TUTORIAL</span>
-    <h1>Belajar Cisco CCNA Untuk Pemula</h1>
-    <p>Panduan lengkap belajar Cisco dari dasar hingga siap ujian sertifikasi.</p>
-    <a href="#" class="tp-btn">Baca Selengkapnya</a>
-  </div>
+      <div class="tp-hero-main tp-slide">
+        <span class="tp-label">MIKROTIK</span>
+        <h1>Mikrotik Dasar Sampai Advanced</h1>
+        <p>Belajar konfigurasi Mikrotik, DHCP, Hotspot, Firewall, dan VLAN.</p>
+        <a href="#" class="tp-btn">Mulai Belajar</a>
+      </div>
 
-  <div class="tp-hero-main tp-slide">
-    <span class="tp-label">MIKROTIK</span>
-    <h1>Mikrotik Dasar Sampai Advanced</h1>
-    <p>Belajar konfigurasi Mikrotik, DHCP, Hotspot, Firewall, dan VLAN.</p>
-    <a href="#" class="tp-btn">Mulai Belajar</a>
-  </div>
+      <div class="tp-hero-main tp-slide">
+        <span class="tp-label">LINUX</span>
+        <h1>Belajar Linux Server Untuk Pemula</h1>
+        <p>Pelajari perintah dasar Linux, server, SSH, web server, dan keamanan.</p>
+        <a href="#" class="tp-btn">Baca Tutorial</a>
+      </div>
 
-  <div class="tp-hero-main tp-slide">
-    <span class="tp-label">LINUX</span>
-    <h1>Belajar Linux Server Untuk Pemula</h1>
-    <p>Pelajari perintah dasar Linux, server, SSH, web server, dan keamanan.</p>
-    <a href="#" class="tp-btn">Baca Tutorial</a>
-  </div>
+      <div class="tp-hero-side">
+        <div class="tp-small-card active" data-slide="0"><h3>Belajar Cisco CCNA</h3></div>
+        <div class="tp-small-card" data-slide="1"><h3>Mikrotik Dasar Sampai Advanced</h3></div>
+        <div class="tp-small-card" data-slide="2"><h3>Belajar Linux Untuk Pemula</h3></div>
+        <div class="tp-small-card"><h3>Python Untuk Pemula</h3></div>
+      </div>
+    </section>
 
-  <div class="tp-hero-side">
-    <div class="tp-small-card" data-slide="0"><h3>Belajar Cisco CCNA</h3></div>
-    <div class="tp-small-card" data-slide="1"><h3>Mikrotik Dasar Sampai Advanced</h3></div>
-    <div class="tp-small-card" data-slide="2"><h3>Belajar Linux Untuk Pemula</h3></div>
-    <div class="tp-small-card"><h3>Python Untuk Pemula</h3></div>
-  </div>
-
-</section>
-
-    <!-- KATEGORI -->
     <section class="tp-section">
       <h2>Kategori Populer</h2>
-
       <div class="tp-category-grid">
         <a href="#" class="tp-category">🌐 <span>Networking</span></a>
         <a href="#" class="tp-category">📡 <span>Cisco</span></a>
@@ -111,13 +103,9 @@
       </div>
     </section>
 
-    <!-- CONTENT -->
     <section class="tp-layout">
-
-      <!-- ARTIKEL -->
       <div class="tp-content">
         <h2>Artikel Terbaru</h2>
-
         <div class="tp-post-grid">
 
           <article class="tp-post">
@@ -159,36 +147,28 @@
         </div>
       </div>
 
-      <!-- SIDEBAR -->
       <aside class="tp-sidebar">
         <div class="tp-widget">
           <h3>Popular Post</h3>
-
           <div class="tp-popular">
             <img src="assets/img/img.png" alt="">
             <p>Cara Konfigurasi VLAN di Cisco Packet Tracer</p>
           </div>
-
           <div class="tp-popular">
             <img src="assets/img/img.png" alt="">
             <p>Pengertian IP Address dan Cara Kerjanya</p>
           </div>
-
           <div class="tp-popular">
             <img src="assets/img/img.png" alt="">
             <p>Setting DHCP Server di Mikrotik</p>
           </div>
         </div>
-
         <div class="tp-ad tp-ad-sidebar">ADSTERRA 300x250</div>
       </aside>
-
     </section>
 
-    <!-- VIDEO -->
     <section class="tp-section">
       <h2>Tutorial Video</h2>
-
       <div class="tp-video-grid">
         <div class="tp-video">▶ Cisco Packet Tracer</div>
         <div class="tp-video">▶ Mikrotik Dasar</div>
@@ -198,17 +178,14 @@
     </section>
 
     <div class="tp-ad">ADSTERRA 728x90</div>
-
   </main>
 
-  <!-- FOOTER -->
   <footer class="tp-footer">
     <div class="tp-container tp-footer-grid">
       <div>
         <h2>TECH <span>PRO</span></h2>
         <p>Belajar teknologi, networking, AI, dan informatika dalam satu tempat.</p>
       </div>
-
       <div>
         <h3>Kategori</h3>
         <a href="#">Networking</a>
@@ -216,7 +193,6 @@
         <a href="#">Mikrotik</a>
         <a href="#">Linux</a>
       </div>
-
       <div>
         <h3>Informasi</h3>
         <a href="#">Tentang Kami</a>
@@ -224,7 +200,6 @@
         <a href="#">Privacy</a>
         <a href="#">Kontak</a>
       </div>
-
       <div>
         <h3>Ikuti Kami</h3>
         <a href="#">YouTube</a>
@@ -233,10 +208,7 @@
         <a href="#">Instagram</a>
       </div>
     </div>
-
-    <div class="tp-copy">
-      © 2026 Tech Pro Blogger Theme.
-    </div>
+    <div class="tp-copy">© 2026 Tech Pro Blogger Theme.</div>
   </footer>
 
   <script src="assets/js/tech-pro.js"></script>
