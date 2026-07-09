@@ -181,31 +181,93 @@
   </main>
 <section class="tp-single-demo tp-container">
   <article class="tp-single-card">
+
+    <div class="tp-breadcrumb">
+      <a href="#">Beranda</a>
+      <span>›</span>
+      <a href="#">Cisco</a>
+      <span>›</span>
+      <span>Konfigurasi VLAN</span>
+    </div>
+
     <span class="tp-label">CISCO</span>
+
     <h1>Cara Konfigurasi VLAN di Cisco Packet Tracer</h1>
 
     <div class="tp-single-meta">
       <span>👤 Kafi Ngamali</span>
       <span>📅 2026</span>
       <span>⏱ 6 menit baca</span>
+      <span>👁 2.5K views</span>
     </div>
 
-    <img src="assets/img/img.png" alt="Single Post">
+    <img class="tp-single-thumb" src="assets/img/img.png" alt="Cara Konfigurasi VLAN">
 
     <div class="tp-toc">
       <h3>Daftar Isi</h3>
-      <a href="#">1. Pengertian VLAN</a>
-      <a href="#">2. Fungsi VLAN</a>
-      <a href="#">3. Topologi</a>
-      <a href="#">4. Konfigurasi</a>
+      <a href="#pengertian">1. Pengertian VLAN</a>
+      <a href="#fungsi">2. Fungsi VLAN</a>
+      <a href="#topologi">3. Topologi VLAN</a>
+      <a href="#konfigurasi">4. Langkah Konfigurasi</a>
+      <a href="#kesimpulan">5. Kesimpulan</a>
     </div>
 
     <div class="tp-article">
-      <p>VLAN adalah teknologi jaringan yang digunakan untuk membagi jaringan fisik menjadi beberapa jaringan logis.</p>
-      <p>Dengan VLAN, administrator dapat mengatur segmentasi jaringan agar lebih aman, rapi, dan mudah dikelola.</p>
+      <h2 id="pengertian">Pengertian VLAN</h2>
+      <p>VLAN adalah teknologi jaringan yang digunakan untuk membagi satu jaringan fisik menjadi beberapa jaringan logis.</p>
+
+      <div class="tp-info-box">
+        VLAN sangat berguna untuk memisahkan jaringan guru, siswa, lab komputer, dan administrasi sekolah.
+      </div>
+
+      <h2 id="fungsi">Fungsi VLAN</h2>
+      <p>Fungsi utama VLAN adalah membuat jaringan lebih rapi, aman, dan mudah dikelola.</p>
+
+      <h2 id="topologi">Topologi VLAN</h2>
+      <p>Dalam praktik Cisco Packet Tracer, VLAN biasanya menggunakan switch, beberapa PC, dan router jika ingin menghubungkan antar VLAN.</p>
+
+      <h2 id="konfigurasi">Langkah Konfigurasi</h2>
+      <pre><code>enable
+configure terminal
+vlan 10
+name GURU
+vlan 20
+name SISWA
+exit</code></pre>
+
+      <div class="tp-warning-box">
+        Pastikan setiap port switch sudah dimasukkan ke VLAN yang benar.
+      </div>
+
+      <h2 id="kesimpulan">Kesimpulan</h2>
+      <p>Dengan VLAN, jaringan sekolah menjadi lebih terstruktur dan aman.</p>
     </div>
 
-    <div class="tp-ad">ADSTERRA 728x90</div>
+    <div class="tp-share">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Telegram</a>
+    </div>
+
+    <div class="tp-author-box">
+      <div class="tp-author-avatar">KG</div>
+      <div>
+        <h3>Kafi Ngamali</h3>
+        <p>Guru TJKT yang membahas networking, Cisco, Mikrotik, Linux, AI, dan teknologi pendidikan.</p>
+      </div>
+    </div>
+
+    <div class="tp-related">
+      <h3>Artikel Terkait</h3>
+      <div class="tp-related-grid">
+        <a href="#">Pengertian IP Address</a>
+        <a href="#">Setting DHCP Server</a>
+        <a href="#">Belajar Subnetting</a>
+        <a href="#">Konfigurasi Router</a>
+      </div>
+    </div>
+
   </article>
 </section>
   <footer class="tp-footer">
