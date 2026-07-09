@@ -523,3 +523,118 @@ img{max-width:100%;display:block}
     grid-template-columns:1fr;
   }
 }
+
+/* SINGLE POST FINAL POLISH */
+.tp-single-demo{
+  max-width:920px;
+  margin:50px auto;
+}
+
+.tp-single-card{
+  padding:34px;
+}
+
+.tp-single-card h1{
+  font-size:42px;
+  line-height:1.15;
+  letter-spacing:-1px;
+}
+
+.tp-single-meta{
+  gap:14px;
+  margin:14px 0 22px;
+}
+
+.tp-article{
+  font-size:17px;
+  line-height:1.9;
+}
+
+.tp-article h2{
+  padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.tp-article pre{
+  position:relative;
+  background:#050b16;
+  border:1px solid rgba(50,208,179,.25);
+  border-radius:18px;
+  padding:22px;
+  margin:20px 0;
+  overflow:auto;
+}
+
+.tp-article pre::before{
+  content:"Cisco IOS";
+  display:block;
+  color:#9fb0c4;
+  font-size:12px;
+  margin-bottom:12px;
+}
+
+.tp-share a:nth-child(1){background:#1877f2;}
+.tp-share a:nth-child(2){background:#111827;}
+.tp-share a:nth-child(3){background:#22c55e;}
+.tp-share a:nth-child(4){background:#229ed9;}
+
+.tp-author-box{
+  align-items:center;
+}
+
+.tp-author-avatar{
+  width:70px;
+  height:70px;
+  font-size:22px;
+}
+
+.tp-related-grid{
+  grid-template-columns:repeat(4,1fr);
+}
+
+.tp-related-grid a{
+  min-height:110px;
+  display:flex;
+  align-items:flex-end;
+  background:
+    linear-gradient(0deg,rgba(5,12,25,.92),rgba(5,12,25,.35)),
+    linear-gradient(135deg,#173a8a,#07111f);
+  font-weight:800;
+}
+
+@media(max-width:900px){
+  .tp-related-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:640px){
+  .tp-single-demo{
+    margin:28px auto;
+  }
+
+  .tp-single-card{
+    padding:22px;
+  }
+
+  .tp-single-card h1{
+    font-size:30px;
+  }
+
+  .tp-related-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.tp-copy-code{
+  position:absolute;
+  top:14px;
+  right:14px;
+  border:1px solid rgba(255,255,255,.15);
+  background:#101c2f;
+  color:#fff;
+  padding:7px 11px;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:12px;
+}
