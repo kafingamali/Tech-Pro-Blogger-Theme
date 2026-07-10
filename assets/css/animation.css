@@ -1,0 +1,1 @@
+@keyframes tpFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.tp-slide.active,.tp-post,.tp-category{animation:tpFade .42s ease both}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
