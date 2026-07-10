@@ -1,4 +1,3 @@
-/* Compatibility loader. The final theme uses the modular CSS files. Keep this file empty or add site-specific overrides below. */
 /* TECH PRO REPAIR V2 — dark design matching the approved mockup */
 :root{--tp-bg:#07111f;--tp-surface:#0e1a2b;--tp-surface-2:#12223a;--tp-card:#10213a;--tp-border:#2a3a50;--tp-text:#f8fafc;--tp-muted:#9fb0c7;--tp-primary:#246bff;--tp-primary-2:#153c91;--tp-accent:#31d0aa;--tp-container:1180px;--tp-radius:14px;--tp-shadow:0 12px 35px rgba(0,0,0,.28)}
 html[data-theme='light']{--tp-bg:#f3f6fb;--tp-surface:#fff;--tp-surface-2:#edf3ff;--tp-card:#fff;--tp-border:#dbe3ef;--tp-text:#142033;--tp-muted:#607089;--tp-primary:#2563eb;--tp-primary-2:#1d4ed8;--tp-shadow:0 12px 30px rgba(15,23,42,.08)}
